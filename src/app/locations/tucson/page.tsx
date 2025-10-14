@@ -9,7 +9,7 @@ import {
   CurrencyDollarIcon,
   PhoneIcon,
   BuildingOffice2Icon,
-  MountainIcon
+  SunIcon
 } from '@heroicons/react/24/outline';
 
 export const metadata: Metadata = {
@@ -84,7 +84,7 @@ const tucsonProjects = [
 
 const tucsonBenefits = [
   {
-    icon: MountainIcon,
+    icon: SunIcon,
     title: 'Desert Climate Expertise',
     description: 'Understanding of Tucson\'s unique desert climate and elevation considerations'
   },
@@ -264,7 +264,7 @@ export default function TucsonPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 px-8 py-16">
             <div className="mx-auto max-w-2xl text-center">
-              <MountainIcon className="mx-auto h-12 w-12 text-white mb-6" />
+              <SunIcon className="mx-auto h-12 w-12 text-white mb-6" />
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Tucson Desert Climate
               </h2>
