@@ -1,10 +1,24 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { PhoneIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 
 export default function Hero() {
   return (
-    <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700">
-      <div className="absolute inset-0 bg-black opacity-20"></div>
+    <div className="relative overflow-hidden">
+      {/* Background Image with Blue Tint */}
+      <div className="absolute inset-0">
+        <Image
+          src="/commercial-roofing-hero-aerial-view-arizona.png"
+          alt="Aerial view of commercial roofing installations across Arizona industrial areas"
+          fill
+          priority
+          className="object-cover hero-image-blue-tint"
+          sizes="100vw"
+        />
+      </div>
+      
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black opacity-40"></div>
       <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
